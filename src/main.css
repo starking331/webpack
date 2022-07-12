@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+@import-sanitize;
+
+@custom-media --viewport-good (width >= 0px);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    color: #000;
+}
+
+#app {
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background-image: linear-gradient(45deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+#app h1 {
+    position: relative;
+}
+
+#app h1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -100px;
+    transform: translateY(-50%);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--url-sunglasses);
+    background-size: contain;
+    height: 64px;
+    width: 64px;
+}
+
+#app h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -100px;
+    transform: translateY(-50%);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--url-sparkles);
+    background-size: contain;
+    height: 64px;
+    width: 64px;
+}
+
+@media (--viewport-good ) {
+    #app {
+        color: #ffffffdd;
+    }
+}

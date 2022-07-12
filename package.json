@@ -1,0 +1,42 @@
+{
+  "name": "sk-hw-1-main",
+  "version": "1.0.0",
+  "description": "Сайты, на которых можно найти всё, что вам нужно - https://developer.mozilla.org/ru/ - https://habr.com/ru/all/ - https://medium.com/ - https://www.w3schools.com/ - https://css-tricks.com/ - https://htmlacademy.ru/ - https://dev.to/",
+  "main": "index.js",
+  "browserslist": "last 2 versions",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "vite",
+    "start": "webpack serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/sanitize-html": "^2.6.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.14",
+    "postcss-custom-media": "^8.0.2",
+    "postcss-loader": "^7.0.1",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^7.7.2",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1",
+    "astroturf": "^1.0.1",
+    "babel-loader": "^8.2.5",
+    "path-browserify": "^1.0.1",
+    "postcss-import": "^14.1.0",
+    "postcss-nested": "^5.0.6",
+    "sanitize.css": "^13.0.0"
+  }
+}
